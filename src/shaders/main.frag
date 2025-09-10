@@ -13,7 +13,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
   float t = iTime * u_speed;
   float d = length(uv) * u_scale;
   float v = 0.5 + 0.5 * sin(10.0 * d - t*6.28318);
-  vec3 col = mix(vec3(0.05, 0.25, 0.45), vec3(0.95, 0.85, 0.55), v);
+  vec3 col = mix(vec3(0.25, 0.25, 0.25), vec3(0.85, 0.85, 0.85), v);
   fragColor = vec4(col, 1.0);
 }
 void main() {
